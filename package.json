@@ -1,0 +1,36 @@
+{
+  "name": "fuel-price-tracking-management-sytem",
+  "version": "1.0.0",
+  "description": "waraa\r ## Getting started",
+  "homepage": "https://gitlab.com/internship1031419/fuel-price-tracking-management-system/fuel-price-tracking-management-sytem#readme",
+  "bugs": {
+    "url": "https://gitlab.com/internship1031419/fuel-price-tracking-management-system/fuel-price-tracking-management-sytem/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/internship1031419/fuel-price-tracking-management-system/fuel-price-tracking-management-sytem.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node service.js",
+    "dev": "nodemon service.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1050.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.10.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.2",
+    "multer": "^2.1.1",
+    "node-cron": "^4.2.1",
+    "nodemon": "^3.1.14",
+    "zod": "^4.4.3"
+  }
+}
