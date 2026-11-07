@@ -52,7 +52,8 @@ const authenticate = (role) => async (req, res, next) => {
         .select("isActive +tokenVersion")
         .lean();
       const tokenVersion = decoded.tokenVersion ?? 0;
-      if (!supplier || !supplier.isActive || tokenVersion !== supplier.tokenVersion) {
+      const storedTokenVersion = supplier?.tokenVersion ?? 0;
+      if (!supplier || !supplier.isActive || tokenVersion !== storedTokenVersion) {
         return res.status(401).json({
           success: false,
           message: "Invalid or expired token",
